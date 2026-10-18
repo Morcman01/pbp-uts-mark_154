@@ -1,0 +1,206 @@
+/* global */
+html{
+    scroll-behavior: smooth;
+}
+
+/* home section background */
+.home-section {
+    display: flow-root;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url(./images/bgNikah1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #090909;
+}
+
+.navbar {
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* bagian nvabar */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-family: serif;
+  font-style: italic;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: transparent;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.25rem;
+  font-family: serif;
+}
+
+
+/* homepage container */
+.cont1{
+    background-color: transparent;
+    min-height: 100vh;
+}
+
+/* homepage contents */
+.head1{
+    font-family: "Italianno", cursive; 
+    font-size: 6.5rem;
+    margin-top: 250px;
+}
+
+.head2{
+    font-size: 1.25rem;
+    font-family: "Emilys Candy", serif;
+    margin-bottom: 50px;
+}
+
+.head3{
+    margin-top: 40px;
+}
+
+.button1{
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    border: none;
+    border-radius: 35px;
+    max-width: 120px;
+    background: white;
+    color: black;
+}
+.button1:hover{
+    background-color: black;
+    color: white;
+}
+
+hr{
+    border-top: 3px solid rgba(255,255,255,0.5);
+}
+
+
+/* bagian our stories */
+.stories{
+    padding: 4rem 0;
+    background-color: rgb(222, 222, 222);
+    border-top: rgb(16, 15, 15) solid 2px;
+    overflow-x: hidden
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide.from-left  {transform: translateX(-120px);}
+.slide.from-right {transform: translateX(120px);}
+
+.slide.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#story-head1{
+    margin-bottom: 40px;
+}
+
+.card-group{
+    display: flex;
+}
+
+.card{
+    background-color: rgb(25, 25, 25);
+}
+
+.card-title, .card-text{
+    color: white;
+}
+
+
+/* gallery section */
+.gallery{
+    padding: 4rem 0;
+    background-color: rgb(222, 222, 222);
+}
+#gallery-head{
+    margin-bottom: 50px;
+}
+
+.gallery-cont{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-cont img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* rsvp section */
+.rsvp{
+    padding: 4rem 0;
+    background-color: rgb(222, 222, 222);
+    scroll-margin-top: 80px;
+    overflow-x: hidden;
+}
+#rsvp-head2{
+    margin-bottom: 50px;
+}
+
+.rsvp-cont{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(25, 25, 25);  
+    color: white;
+    border-radius: 0.25rem;              
+}
+
+.rsvp-cont .form-control,
+.rsvp-cont .custom-select{
+    background-color: rgb(45, 45, 45);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.rsvp-cont .form-control::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.rsvp-cont .form-control:focus,
+.rsvp-cont .custom-select:focus{
+    background-color: rgb(55, 55, 55);
+    border-color: white;
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.rsvp-cont option{
+    color: black;   
+}
+
+.rsvp-cont .btn-dark{
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 35px;
+    font-size: 1.2rem;
+}
+.rsvp-cont .btn-dark:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
